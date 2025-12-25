@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --heading-font: "Quicksand", sans-serif;
+  --nav-font: "Open+Sans", sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+:root {
+  --night-blue: #13447f; /* Bleu de nuit */
+  --clear-blue: #065cc2; /* Bleu claire */
+  --default-color: #314862; /*  */
+  --default-color: #314862; /* color-mix(in srgb, var(--default-color), transparent 50%); la couleur grise */
+  --start-color: #ffc107;
+  --skay-blue: #acc4e0; /* Bleu ciel */
+  --background-color: #ffffff; /* white */
+}

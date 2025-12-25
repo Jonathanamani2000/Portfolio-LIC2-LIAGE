@@ -1,0 +1,15 @@
+mobile-nav-toggle d-xl-none bi bi-list
+
+bi bi-twitter
+
+bi bi-linkedin
+
+bi bi-github
+
+bi bi-instagram
+
+bi bi-palette
+
+bi bi-code-slash
+
+bi bi-lightning
