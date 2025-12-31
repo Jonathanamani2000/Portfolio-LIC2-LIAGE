@@ -499,6 +499,7 @@ header {
   align-items: center;
   justify-content: center;
   display: block;
+  text-decoration: none;
 }
 
 .right_about .profession_years .timeline {
