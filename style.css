@@ -485,6 +485,7 @@ header {
   font-family: var(--heading-font);
   color: var(--night-blue);
   font-weight: 500;
+  color: #065cc2;
 }
 .profesion .gride_contenair .gride p {
   font-size: 14px;
