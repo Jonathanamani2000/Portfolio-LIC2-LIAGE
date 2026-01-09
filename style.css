@@ -824,10 +824,10 @@ header {
   letter-spacing: 0.5px;
 }
 
-/* 4ème Section Medium------------------------------------------------------------------------------------------ */
+/* 4ème Resume Section------------------------------------------------------------------------------------------ */
 
 .resume_section {
-  margin: 60px 40px;
+  padding: 60px 35px;
 }
 .resume_section .timeline {
   display: flex;
@@ -849,14 +849,14 @@ header {
 }
 .titre_journey .cours .titre h2 {
   font-family: var(--heading-font);
-  font-size: 28.8px;
+  font-size: 1.6rem;
   color: var(--night-blue);
   font-weight: 700;
   line-height: 1;
 }
-.titre_journey .cours .titre .material-symbols-outlined {
+.titre_journey .cours .titre .icons_resume {
   color: var(--clear-blue);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 .titre_journey .cours p {
@@ -882,7 +882,7 @@ header {
 .work_domain:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px
-    color-mix(in srgb, var(--default-color), transparent, 85%);
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .bor_left {
@@ -895,7 +895,7 @@ header {
 }
 
 .tec_title h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--heading-font);
   font-weight: 600;
   color: var(--night-blue);
@@ -923,8 +923,8 @@ header {
   color: var(--clear-blue);
   padding: 4px 12px;
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 550;
 }
 .tec_years {
   background-color: var(--skay-blue);
@@ -932,15 +932,16 @@ header {
   color: var(--background-color);
   padding: 4px 12px;
   border-radius: 20px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 600;
 }
 
 .work_domain p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   font-family: var(--default-font);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
 }
 /*---*/
 .job_description {
@@ -951,7 +952,7 @@ header {
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   display: flex;
   align-items: flex-start;
@@ -1041,3 +1042,5 @@ header {
   z-index: 2;
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--clear-blue), transparent 89%);
 }
+
+/* 5ème Services Section----------------------------------------------------------------------------------------- */
