@@ -1317,13 +1317,13 @@ header {
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.top_comments,
 .bottom_comments {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
+
 .bottom_comments .all_forms_comments {
   border-top: 3px solid var(--clear-blue);
   transition: 0.3s ease;
@@ -1410,7 +1410,6 @@ header {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-
   width: fit-content; /*pour cxentre ma derniere form*/
   display: block; /*pour cxentre ma derniere form*/
   margin: 30px auto; /*pour cxentre ma derniere form*/
@@ -1448,4 +1447,28 @@ header {
 }
 .last_comment:hover {
   transform: translateY(-10px);
+}
+
+.comment_dot {
+  position: relative;
+  margin: 20px 0 50px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.comment_dot .dot {
+  width: 8.5px;
+  height: 8.5px;
+  background: color-mix(in srgb, var(--clear-blue), transparent 70%);
+  text-align: center;
+  border-radius: 50%;
+}
+.comment_dot .point {
+  width: 18px;
+  height: 8.5px;
+  background: var(--clear-blue);
+  text-align: center;
+  border-radius: 10px;
 }
