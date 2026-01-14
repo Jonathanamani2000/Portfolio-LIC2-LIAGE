@@ -8,7 +8,9 @@
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+:root {
+  interpolate-size: allow-keywords;
+}
 :root {
   --night-blue: #13447f; /* Bleu de nuit */
   --clear-blue: #065cc2; /* Bleu claire */
@@ -1401,7 +1403,7 @@ header {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   width: fit-content; /*pour cxentre ma derniere form*/
   display: block; /*pour cxentre ma derniere form*/
-  margin: 30px auto; /*pour cxentre ma derniere form*/
+  margin: 30px auto 0 auto; /*pour cxentre ma derniere form*/
   transition: 0.5s ease;
 }
 .last_comment .nmbr_star {
@@ -1461,4 +1463,74 @@ header {
   background: var(--clear-blue);
   text-align: center;
   border-radius: 10px;
+}
+
+/* 8ème Questions Section---------------------------------------------------------------------------------------------------- */
+
+.questions_section {
+  padding: 0 0 60px 0;
+  top: -20px;
+}
+.question_conteanair {
+  padding: 0 40px;
+  display: block;
+  align-items: center;
+  justify-content: start;
+}
+summary {
+  list-style: none;
+}
+summary {
+  list-style: none;
+}
+.question_conteanair .all_details .all_summarys .main_txt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question_conteanair .all_details {
+  border-radius: 5px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 20px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  background: var(--background-color);
+}
+/*Traiter evenement au clic sur les balise details et sammury*/
+.all_details[open] {
+  background: color-mix(in srgb, var(--clear-blue), transparent 97%);
+}
+.all_details span i {
+  transition: 0.4s ease;
+  float: right;
+  cursor: pointer;
+}
+.all_details[open] span i {
+  transform: rotate(90deg);
+  color: var(--clear-blue);
+}
+.all_details[open] summary,
+.all_details[open] .main_txt h3 {
+  color: rebeccapurple;
+}
+.question_conteanair .all_details .all_summarys .main_txt h3 {
+  color: var(--night-blue);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  font-family: var(--heading-font);
+  cursor: pointer;
+}
+.question_conteanair .all_details .all_summarys .main_txt h3:hover {
+  color: var(--clear-blue);
+}
+.deroulant_txt p {
+  font-weight: 400;
+  font-family: var(--default-font);
+  color: color-mix(in srgb, var(--icons-color), transparent 1%);
+  font-size: 14.5px;
+  line-height: 1.5;
+  padding-top: 10px;
 }
