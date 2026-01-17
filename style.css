@@ -4,9 +4,10 @@
 :root {
   --heading-font: "Quicksand", sans-serif; /* font1 */
   --nav-font: "Open Sans", sans-serif; /* Font2 */
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 :root {
   interpolate-size: allow-keywords;
@@ -98,8 +99,18 @@ header {
   font-size: 1.2rem;
   margin-bottom: 48px;
   line-height: 1.6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-weight: 350;
 }
 
@@ -266,6 +277,7 @@ header {
   font-family: var(--default-font);
   font-weight: bold;
   color: var(--icons-color);
+  width: 10.6rem;
 }
 
 .ui_ux_icon p i,
@@ -275,6 +287,12 @@ header {
   font-size: 25px;
   font-weight: normal;
   line-height: 1.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-shrink: 0;
 }
 .flash_icon p {
   bottom: 80px;
@@ -341,6 +359,15 @@ header {
 }
 
 /* /* 2ème Section About------------------------------------------------------------------------------------------ */
+
+.about_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.about_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
 
 .about_section {
   align-items: center;
@@ -828,6 +855,15 @@ header {
 
 /* 4ème Resume Section------------------------------------------------------------------------------------------ */
 
+.resume_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.resume_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
+
 .resume_section {
   padding: 60px 35px;
 }
@@ -1045,6 +1081,15 @@ header {
 
 /* 5ème Services Section----------------------------------------------------------------------------------------- */
 
+.services_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.services_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
+
 .services_section {
   padding: 60px 35px;
 }
@@ -1144,6 +1189,15 @@ header {
 }
 
 /* 6ème Portfolio Section---------------------------------------------------------------------------------------------------- */
+
+.portfolio_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.portfolio_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
 
 .tittle_all_section {
   padding: 60px 35px 0 35px;
@@ -1292,6 +1346,15 @@ header {
 }
 
 /* 7ème Testimonials Section---------------------------------------------------------------------------------------------------- */
+
+.testimonials_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.testimonials_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
 
 .testimonials_section {
   padding: 60px 40px;
@@ -1467,12 +1530,21 @@ header {
 
 /* 8ème Questions Section---------------------------------------------------------------------------------------------------- */
 
+.questions_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.questions_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
+
 .questions_section {
   padding: 0 0 60px 0;
   top: -20px;
 }
 .question_conteanair {
-  padding: 0 40px;
+  padding: 0 50px;
   display: block;
   align-items: center;
   justify-content: start;
@@ -1533,4 +1605,247 @@ summary {
   font-size: 14.5px;
   line-height: 1.5;
   padding-top: 10px;
+}
+
+/* 9ème Contact Section---------------------------------------------------------------------------------------------------- */
+.contact_section .tittle_all_section .titre .about_line,
+h2,
+p {
+  right: -15px;
+}
+.contact_section .tittle_all_section .titre .about_line {
+  margin-left: 20px;
+}
+
+.top_footer {
+  padding: 0 40px 60px 40px;
+}
+.top_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.top_footer .contact_info {
+  background-color: var(--clear-blue);
+  padding: 3rem 3rem 6rem 3rem;
+  margin: 0 24px 0 10px;
+  border-radius: 1rem;
+  height: 100%;
+}
+.top_footer .contact_info .title_info h3 {
+  color: var(--background-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.top_footer .contact_info .title_info p {
+  color: var(--background-color);
+  font-family: var(--default-font);
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.top_footer .contact_info .details_info {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+  padding-bottom: 32px;
+}
+.top_footer .contact_info .details_info:hover .icone_loc {
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 70%
+  );
+}
+.top_footer .contact_info .details_info .icone_loc {
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 85%
+  );
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+.top_footer .contact_info .details_info .icone_loc i {
+  color: var(--background-color);
+  font-size: 1.3rem;
+}
+.top_footer .contact_info .txt_loc h4 {
+  font-family: var(--heading-font);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--background-color);
+  padding-bottom: 0.5rem;
+}
+.top_footer .contact_info .txt_loc .parag p {
+  color: var(--background-color);
+  font-size: 0.86rem;
+  opacity: 0.8;
+  font-weight: normal;
+  margin-bottom: 0.27rem;
+}
+.get_in_touch {
+  background-color: var(--background-color);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 0 10px 0 24px;
+}
+.get_in_touch .title_get h3 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--night-blue);
+}
+.get_in_touch .title_get p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-family: var(--default-font);
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.contact_form .identity {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.contact_form .identity .names {
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  width: 16.5rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-weight: normal;
+}
+.contact_form .subjects {
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.contact_form .msg_comment {
+  background-color: red;
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  width: 100%;
+  height: 10rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.identity .names:focus,
+.subjects:focus,
+.msg_comment:focus {
+  border-color: var(--clear-blue);
+  outline: none;
+}
+.contact_form .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_form .btn .btn_send {
+  padding: 1rem 2rem;
+  background-color: var(--clear-blue);
+  color: var(--background-color);
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact_form .btn .btn_send:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--clear-blue),
+    var(--background-color) 20%
+  );
+}
+
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 1rem;
+  font-family: var(--default-font);
+}
+
+.contact_section .bottom_section {
+  background-color: var(--clear-blue);
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  text-align: center;
+}
+.contact_section .bottom_section .copy {
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--background-color);
+}
+.contact_section .bottom_section .copy span {
+  font-weight: bold;
+}
+.contact_section .bottom_section .icons_foot {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact_section .bottom_section .icons_foot i {
+  color: color-mix(in srgb, var(--background-color), transparent 10%);
+  font-size: 1rem;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--background-color);
+  opacity: 0.6;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact_section .bottom_section .icons_foot i:hover {
+  opacity: 0.8;
+}
+.contact_section .bottom_section p .boot {
+  color: var(--background-color);
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 50;
+  transition: 0.3s ease;
+}
+.contact_section .bottom_section p .boot:hover {
+  opacity: 0.4;
+}
+.contact_section .bottom_section p .design {
+  font-weight: 500;
+  opacity: 2;
+  color: var(--background-color);
+  font-size: 13px;
 }
